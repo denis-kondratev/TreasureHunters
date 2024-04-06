@@ -1,0 +1,906 @@
+fileFormatVersion: 2
+guid: ccc9c34a481f3481197fe3ca0396256a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9105263513014817186
+    second: Big Banner (guide)_0
+  - first:
+      213: 857980957317109518
+    second: Big Banner (guide)_1
+  - first:
+      213: -5414709624864643138
+    second: Big Banner (guide)_2
+  - first:
+      213: -3796082638118353953
+    second: Big Banner (guide)_3
+  - first:
+      213: -4428503382656929886
+    second: Big Banner (guide)_4
+  - first:
+      213: -7743833109989808303
+    second: Big Banner (guide)_5
+  - first:
+      213: -2119559415134293553
+    second: Big Banner (guide)_6
+  - first:
+      213: -3757309496732394680
+    second: Big Banner (guide)_7
+  - first:
+      213: -1001449366710641267
+    second: Big Banner (guide)_8
+  - first:
+      213: -6087144652730871749
+    second: Big Banner (guide)_9
+  - first:
+      213: -5889782287785145099
+    second: Big Banner (guide)_10
+  - first:
+      213: -7399066696551696204
+    second: Big Banner (guide)_11
+  - first:
+      213: 5271756168640264219
+    second: Big Banner (guide)_12
+  - first:
+      213: -6905888414375621653
+    second: Big Banner (guide)_13
+  - first:
+      213: 5851115673798165290
+    second: Big Banner (guide)_14
+  - first:
+      213: 3513689746610612218
+    second: Big Banner (guide)_15
+  - first:
+      213: 378445480472264137
+    second: Big Banner (guide)_16
+  - first:
+      213: -549862320184897384
+    second: Big Banner (guide)_17
+  - first:
+      213: -2539200652596339650
+    second: Big Banner (guide)_18
+  - first:
+      213: 6328077474640522960
+    second: Big Banner (guide)_19
+  - first:
+      213: -7911242179360089663
+    second: Big Banner (guide)_20
+  - first:
+      213: -2160854151226917851
+    second: Big Banner (guide)_21
+  - first:
+      213: -2469824807087399066
+    second: Big Banner (guide)_22
+  - first:
+      213: 4092559334134920594
+    second: Big Banner (guide)_23
+  - first:
+      213: 4733579828464626584
+    second: Big Banner (guide)_24
+  - first:
+      213: 3387855941386947980
+    second: Big Banner (guide)_25
+  - first:
+      213: -7546863170575778179
+    second: Big Banner (guide)_26
+  - first:
+      213: -7278478892393441135
+    second: Big Banner (guide)_27
+  - first:
+      213: -4289232158278831551
+    second: Big Banner (guide)_28
+  - first:
+      213: 4638607622904276660
+    second: Big Banner (guide)_29
+  - first:
+      213: 4424167226072525889
+    second: Big Banner (guide)_30
+  - first:
+      213: -1643738362361801754
+    second: Big Banner (guide)_31
+  - first:
+      213: 6688487635704665023
+    second: Big Banner (guide)_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Big Banner (guide)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 140
+        width: 23
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1d29f5ce46c5e70800000000000000
+      internalID: 9105263513014817186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 106
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e079fe8822928eb00800000000000000
+      internalID: 857980957317109518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 140
+        width: 24
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb7ed08d8461bd4b0800000000000000
+      internalID: -5414709624864643138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_3
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 106
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd38de004fa915bc0800000000000000
+      internalID: -3796082638118353953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_4
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 140
+        width: 34
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af2e1ef2abca82c0800000000000000
+      internalID: -4428503382656929886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_5
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 106
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1572627a0d0688490800000000000000
+      internalID: -7743833109989808303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_6
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 140
+        width: 34
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1f59c11ffc592e0800000000000000
+      internalID: -2119559415134293553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_7
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 106
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b50187bea5bdbc0800000000000000
+      internalID: -3757309496732394680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 140
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d1cac5b132a12f0800000000000000
+      internalID: -1001449366710641267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_9
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 106
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30de8d703e168ba0800000000000000
+      internalID: -6087144652730871749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_10
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 140
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fccd24f63a434ea0800000000000000
+      internalID: -5889782287785145099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_11
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 106
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8fc9a9a0c315990800000000000000
+      internalID: -7399066696551696204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_12
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 140
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b18f64eed4a092940800000000000000
+      internalID: 5271756168640264219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_13
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 106
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebc7aa731b5920a0800000000000000
+      internalID: -6905888414375621653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 90
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23c57c64b6533150800000000000000
+      internalID: 5851115673798165290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_15
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 90
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af768ad453223c030800000000000000
+      internalID: 3513689746610612218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_16
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 90
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cdb66ec822804500800000000000000
+      internalID: 378445480472264137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_17
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 90
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 890d102122f7e58f0800000000000000
+      internalID: -549862320184897384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_18
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 100
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c1e80b572f2ccd0800000000000000
+      internalID: -2539200652596339650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_19
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 100
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de69138fe8d1d750800000000000000
+      internalID: 6328077474640522960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_20
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 95
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c99727472f953290800000000000000
+      internalID: -7911242179360089663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52cf0b0299a1302e0800000000000000
+      internalID: -2160854151226917851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 23
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f9b147c6b69bdd0800000000000000
+      internalID: -2469824807087399066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_23
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 44
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2953255f701bbc830800000000000000
+      internalID: 4092559334134920594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_24
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 10
+        width: 24
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ba69f36cd01b140800000000000000
+      internalID: 4733579828464626584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_25
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 44
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8dc0907705140f20800000000000000
+      internalID: 3387855941386947980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_26
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 10
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e3a5d6ee7244790800000000000000
+      internalID: -7546863170575778179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_27
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 44
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198d5b9a206adfa90800000000000000
+      internalID: -7278478892393441135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_28
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 10
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142bb9ec3169974c0800000000000000
+      internalID: -4289232158278831551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b6e0af7e05af5040800000000000000
+      internalID: 4638607622904276660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_30
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 0
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c6af0e6acc56d30800000000000000
+      internalID: 4424167226072525889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_31
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 0
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e31eb71ba44039e0800000000000000
+      internalID: -1643738362361801754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Banner (guide)_32
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3d4ca411842dc50800000000000000
+      internalID: 6688487635704665023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

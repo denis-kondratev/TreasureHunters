@@ -4,15 +4,16 @@ using UnityEngine;
 namespace TreasureHunters.PlatformerMechanics
 {
     /// <summary>
-    /// Foundational script for controlling the movement and state of game entities such
-    /// as characters, enemies, and objects within a 2D platformer environment. This
-    /// script provides a framework for handling different movement states (e.g.,
-    /// grounded, airborne) and  enables the controlled application of kinematic
-    /// principles for movement, ensuring that entities can move smoothly along surfaces,
-    /// jump, and fall, adhering to custom-defined physics rather than relying solely on
-    /// the engine's physics system. Use this script as a base for any entity that
-    /// requires precise movement control, including walking, jumping, and interacting
-    /// with the game world's physics in a controlled manner.
+    /// Foundational script for controlling the movement and state of game entities
+    /// such as characters, enemies, and objects within a 2D platformer environment.
+    /// This script provides a framework for handling different movement states
+    /// (e.g., grounded, airborne) and  enables the controlled application of
+    /// kinematic principles for movement, ensuring that entities can move smoothly
+    /// along surfaces, jump, and fall, adhering to custom-defined physics rather
+    /// than relying solely on the engine's physics system. Use this script as a
+    /// base for any entity that requires precise movement control, including
+    /// walking, jumping, and interacting with the game world's physics in a
+    /// controlled manner.
     /// </summary>
     public class KinematicObject : MonoBehaviour
     {
@@ -54,10 +55,10 @@ namespace TreasureHunters.PlatformerMechanics
         /// <summary>
         /// The velocity's role may slightly vary depending on the object's
         /// <see cref="KinematicState"/>. For instance, when in the
-        /// <see cref="KinematicState.Grounded"/> state, the <c>x</c> value represents
-        /// the speed of movement along the surface. Conversely, in the
-        /// <see cref="KinematicState.Airborne"/> state, the velocity corresponds to the
-        /// object's speed in 2D space.
+        /// <see cref="KinematicState.Grounded"/> state, the <c>x</c> value
+        /// represents the speed of movement along the surface. Conversely, in the
+        /// <see cref="KinematicState.Airborne"/> state, the velocity corresponds
+        /// to the object's speed in 2D space.
         /// </summary> 
         [SerializeField] private Vector2 _velocity;
 
@@ -70,15 +71,15 @@ namespace TreasureHunters.PlatformerMechanics
         [SerializeField] private float _minGroundNormalVertical = 0.5f;
 
         /// <summary>
-        /// Defines the states in which the object can exist. The object's movement type
-        /// changes based on its current state.
+        /// Defines the states in which the object can exist. The object's movement
+        /// type changes based on its current state.
         /// </summary>
         [field: SerializeField]
         public KinematicState KinematicState { get; private set; }
 
         /// <summary>
-        /// The velocity of the object. Limits the magnitude of velocity to the maximum
-        /// speed if it exceeds it.
+        /// The velocity of the object. Limits the magnitude of velocity to the
+        /// maximum speed if it exceeds it.
         /// </summary>
         public Vector2 Velocity
         {
@@ -90,14 +91,16 @@ namespace TreasureHunters.PlatformerMechanics
         }
 
         /// <summary>
-        /// Stores cast result for this object. Avoids memory allocation on every cast.
+        /// Stores cast result for this object. Avoids memory allocation on every
+        /// cast.
         /// </summary>
         private RaycastHit2D[] _castBuffer;
         
         /// <summary>
-        /// The square of the minimum movement distance. Used to avoid taking the square
-        /// root when calculating the magnitude of the movement vector, thereby avoiding
-        /// unnecessary calculations. We will simply compare the squares of distances.
+        /// The square of the minimum movement distance. Used to avoid taking the
+        /// square root when calculating the magnitude of the movement vector,
+        /// thereby avoiding unnecessary calculations. We will simply compare the
+        /// squares of distances.
         /// </summary>
         private float _sqrMinMoveDistance;
 
@@ -145,8 +148,9 @@ namespace TreasureHunters.PlatformerMechanics
         }
         
         /// <summary>
-        /// If the object is on a surface, sets <see cref="KinematicState.Grounded"/>
-        /// and the surface normal <see cref="_groundNormal"/> of the object.
+        /// If the object is on a surface, sets
+        /// <see cref="KinematicState.Grounded"/> and the surface normal
+        /// <see cref="_groundNormal"/> of the object.
         /// </summary>
         private void GroundIfPossible()
         {
@@ -154,12 +158,15 @@ namespace TreasureHunters.PlatformerMechanics
 
             if (Mathf.Approximately(verticalSpeed, 0))
             {
-                var groundCastDistance =
-                    _gravityFactor * Time.fixedDeltaTime * Physics2D.gravity.magnitude 
+                var groundCastDistance = 
+                    _gravityFactor 
+                    * Time.fixedDeltaTime 
+                    * Physics2D.gravity.magnitude 
                     + _safeDistance;
 
                 if (TryGetHit(Physics2D.gravity, groundCastDistance, out var hit)
-                    && Vector2.Dot(hit.normal, -_normalizedGravity) >= _minGroundNormalVertical)
+                    && Vector2.Dot(hit.normal, -_normalizedGravity) 
+                        >= _minGroundNormalVertical)
                 {
                     _groundNormal = hit.normal;
                     KinematicState = KinematicState.Grounded;
@@ -178,7 +185,9 @@ namespace TreasureHunters.PlatformerMechanics
         /// <param name="direction">The direction of the cast.</param>
         /// <param name="distance">The distance of the cast.</param>
         /// <param name="hit">Returns the hit if one exists.</param>
-        private bool TryGetHit(Vector2 direction, float distance, out RaycastHit2D hit)
+        private bool TryGetHit(Vector2 direction,
+                               float distance,
+                               out RaycastHit2D hit)
         {
             var hitCount = _rigidbody2D.Cast(direction, _groundFilter,
                 _castBuffer, distance);
@@ -222,9 +231,11 @@ namespace TreasureHunters.PlatformerMechanics
         /// </summary>
         private void PerformMotion(Vector2 displacement)
         {
-            if (TryGetHit(displacement, displacement.magnitude + _safeDistance, out var hit))
+            if (TryGetHit(displacement,
+                    displacement.magnitude + _safeDistance, out var hit))
             {
-                displacement = (hit.distance - _safeDistance) * displacement.normalized;
+                displacement = (hit.distance - _safeDistance)
+                               * displacement.normalized;
                 Velocity = ClipCollisionVector(_velocity, hit.normal);
             }
 
@@ -240,7 +251,8 @@ namespace TreasureHunters.PlatformerMechanics
         /// surface.</param>
         private Vector2 ClipCollisionVector(Vector2 vector, Vector2 surfaceNormal)
         {
-            var dampenedValue = Vector2.Dot(vector, surfaceNormal) * surfaceNormal;
+            var dampenedValue = Vector2.Dot(vector, surfaceNormal) 
+                                * surfaceNormal;
             return vector - dampenedValue;
         }
     }

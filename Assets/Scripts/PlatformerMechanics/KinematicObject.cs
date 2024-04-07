@@ -128,21 +128,29 @@ namespace TreasureHunters.PlatformerMechanics
 
         private void FixedUpdate()
         {
+            // Recalculate the normalized value of the gravity vector in case it
+            // has changed.
             _normalizedGravity = Physics2D.gravity.normalized;
             
+            // Attempt to ground the object if possible.
             GroundIfPossible();
-
+            
             if (KinematicState == KinematicState.Airborne)
             {
+                // If the object is in the Airborne state, account for the impact
+                // of gravity.
                 var gravityImpaction =
                     Time.fixedDeltaTime * _gravityFactor * Physics2D.gravity;
                 Velocity = _velocity + gravityImpaction;
             }
             
+            // Calculate the desired displacement vector for this update cycle.
             var displacement = _velocity * Time.fixedDeltaTime;
 
             if (displacement.sqrMagnitude >= _sqrMinMoveDistance)
             {
+                // If the displacement is too small, it won't be executed.
+                // Otherwise, proceed with moving the object.
                 PerformMotion(displacement);
             }
         }
@@ -154,29 +162,50 @@ namespace TreasureHunters.PlatformerMechanics
         /// </summary>
         private void GroundIfPossible()
         {
+            // Find the vertical component of the object's velocity. We reserve the
+            // right to change the direction of gravity, for instance, to simulate
+            // swaying on a ship. This can be achieved by rotating the camera and
+            // tilting the gravity vector. Therefore, to obtain the vertical
+            // component of velocity, we need to calculate the dot product of the
+            // velocity vector with the normalized vector of gravity,
+            // rather than simply taking the y-value of the vector.
             var verticalSpeed = Vector2.Dot(_normalizedGravity, _velocity);
 
+            // If verticalSpeed is not zero, it means the object is either moving
+            // upwards or downwards, and thus is in the Airborne state.
             if (Mathf.Approximately(verticalSpeed, 0))
             {
+                // Even if the object currently lacks vertical speed, you must still
+                // ensure it has a surface to stand on. For this, we cast a ray.
+                // The cast distance is calculated as the distance the object can
+                // travel in one update cycle under the influence of gravity,
+                // plus the _safeDistance buffer.
                 var groundCastDistance = 
                     _gravityFactor 
                     * Time.fixedDeltaTime 
                     * Physics2D.gravity.magnitude 
                     + _safeDistance;
 
+                // Search for a hit with the surface. If a hit is found and the
+                // upward vertical component of the surface is sufficient for the
+                // surface to be considered stable, the object is deemed to be in
+                // the Grounded state.
                 if (TryGetHit(Physics2D.gravity, groundCastDistance, out var hit)
                     && Vector2.Dot(hit.normal, -_normalizedGravity) 
                         >= _minGroundNormalVertical)
                 {
+                    // Save the surface normal. It will be useful for correctly
+                    // calculating the object's speed when moving along the surface.
                     _groundNormal = hit.normal;
                     KinematicState = KinematicState.Grounded;
-
                     return;
                 }
             }
 
-            KinematicState = KinematicState.Airborne;
+            // If the above conditions are not met, the object is in the Airborne
+            // state. We also reset the surface normal.
             _groundNormal = Vector2.zero;
+            KinematicState = KinematicState.Airborne;
         }
 
         /// <summary>
@@ -231,14 +260,22 @@ namespace TreasureHunters.PlatformerMechanics
         /// </summary>
         private void PerformMotion(Vector2 displacement)
         {
+            // Search for obstacles in the object's path, taking into account
+            // the value of _safeDistance.
             if (TryGetHit(displacement,
                     displacement.magnitude + _safeDistance, out var hit))
             {
+                // If a hit is found, limit the object's displacement vector up to
+                // the point of collision, subtracting _safeDistance to maintain
+                // a buffer distance between the object's collider and the surface
+                // collider.
                 displacement = (hit.distance - _safeDistance)
                                * displacement.normalized;
+                // Also, adjust the velocity based on the collision with the surface.
                 Velocity = ClipCollisionVector(_velocity, hit.normal);
             }
 
+            // Directly execute the object's displacement.
             var position = _rigidbody2D.position + displacement;
             _rigidbody2D.MovePosition(position);
         }

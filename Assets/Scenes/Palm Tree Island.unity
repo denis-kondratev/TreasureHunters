@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 368102424}
   - component: {fileID: 368102422}
   - component: {fileID: 368102421}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Captain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,10 +256,11 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   _maxSpeed: 30
-  _raycastBufferSize: 4
+  _castBufferSize: 4
   _minMoveDistance: 0.001
   _safeDistance: 0.01
   _velocity: {x: 0, y: 0}
+  _minGroundNormalVertical: 0.5
   <KinematicState>k__BackingField: 0
 --- !u!1 &516900573
 GameObject:
@@ -271,7 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 516900574}
   - component: {fileID: 516900575}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Appearance
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -257,9 +257,10 @@ MonoBehaviour:
     maxNormalAngle: 0
   _maxSpeed: 30
   _raycastBufferSize: 4
-  _minMoveDistance: 0.005
+  _minMoveDistance: 0.001
+  _safeDistance: 0.01
+  _velocity: {x: 0, y: 0}
   <KinematicState>k__BackingField: 0
-  <Velocity>k__BackingField: {x: 0, y: 0}
 --- !u!1 &516900573
 GameObject:
   m_ObjectHideFlags: 0

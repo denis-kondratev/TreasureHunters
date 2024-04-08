@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 7303389924798871935}
   - component: {fileID: 3236865934590029652}
   m_Layer: 0
-  m_Name: Island Foreground
+  m_Name: Foreground Palms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

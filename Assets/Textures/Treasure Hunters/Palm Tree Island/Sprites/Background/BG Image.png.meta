@@ -46,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 91, z: 0, w: 23}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -112,16 +112,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 23f6b3418e21321a0800000000000000
+      spriteID: e2fc879c4175c45b58417fdb20fb0a2e
       internalID: -6835599021437128910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BG Image_12
+      name: BG Image_1
       rect:
         serializedVersion: 2
         x: 0
@@ -135,14 +135,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f30512729aa8a46658fe89e90d3d759e
-      internalID: 596633275
+      spriteID: 0c751d22e81fe495dbe3445c45182075
+      internalID: 2121547614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BG Image_24
+      name: BG Image_2
       rect:
         serializedVersion: 2
         x: 0
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 909baf18f4e6f41f5adb6af8d18da7a0
-      internalID: -1597435274
+      spriteID: e8e23211d09624e68ad7ccd70f382815
+      internalID: -503531785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BG Image_36
+      name: BG Image_3
       rect:
         serializedVersion: 2
         x: 0
@@ -177,8 +177,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56a50d4ca37ff4d89b8a6f69693a1a25
-      internalID: -677396936
+      spriteID: 37b20cce844b94e0f843845af79cb6be
+      internalID: 1255345343
       vertices: []
       indices: 
       edges: []
@@ -187,7 +187,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -196,52 +196,8 @@ TextureImporter:
     nameFileIdTable:
       BG Image_0: -6835599021437128910
       BG Image_1: 2121547614
-      BG Image_10: 908504648
-      BG Image_11: 429357398
-      BG Image_12: 596633275
-      BG Image_13: -447221004
-      BG Image_14: 1509955008
-      BG Image_15: 1435389963
-      BG Image_16: 489490321
-      BG Image_17: 1351934436
-      BG Image_18: 82656654
-      BG Image_19: 1205821657
       BG Image_2: -503531785
-      BG Image_20: 1105012689
-      BG Image_21: 2122445823
-      BG Image_22: 351962017
-      BG Image_23: -381322045
-      BG Image_24: -1597435274
-      BG Image_25: -611097728
-      BG Image_26: 1159446337
-      BG Image_27: -1189098826
-      BG Image_28: 1690425448
-      BG Image_29: 1495579102
       BG Image_3: 1255345343
-      BG Image_30: 1191864805
-      BG Image_31: 1522456410
-      BG Image_32: -1797983809
-      BG Image_33: 434360932
-      BG Image_34: -1634652844
-      BG Image_35: -1012737126
-      BG Image_36: -677396936
-      BG Image_37: -483299026
-      BG Image_38: -1521888752
-      BG Image_39: -883450516
-      BG Image_4: 1644036575
-      BG Image_40: 179589086
-      BG Image_41: 1649065602
-      BG Image_42: 191535896
-      BG Image_43: -1429274427
-      BG Image_44: -1031371961
-      BG Image_45: -1171138478
-      BG Image_46: -1826161743
-      BG Image_47: 1987653755
-      BG Image_5: -1424664063
-      BG Image_6: 1304002217
-      BG Image_7: -1668474862
-      BG Image_8: -1236326094
-      BG Image_9: -1076138507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

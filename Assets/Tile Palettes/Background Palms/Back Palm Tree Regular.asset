@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Back Palm Tree Regular
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: -1649462829004520127, guid: e115deec72bb642998968d03b2b120f7, type: 3}
+  - {fileID: -727943335402031445, guid: 7c710f6737d694616b7ae532d7822a77, type: 3}
+  - {fileID: 1378905676286290193, guid: 71de3f0220eef476b94bd8427a13d949, type: 3}
+  - {fileID: -2763940042757953526, guid: 4294ead6551424d7e88f0229350f0033, type: 3}
+  m_MinSpeed: 5
+  m_MaxSpeed: 5
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

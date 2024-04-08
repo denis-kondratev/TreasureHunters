@@ -259,6 +259,7 @@ MonoBehaviour:
   _castBufferSize: 4
   _minMoveDistance: 0.001
   _safeDistance: 0.01
+  _groundDistance: 0.01
   _velocity: {x: 0, y: 0}
   _minGroundNormalVertical: 0.5
   <KinematicState>k__BackingField: 0

@@ -51,6 +51,11 @@ namespace TreasureHunters.PlatformerMechanics
         /// Distance to maintain from surfaces to prevent sticking.
         /// </summary>
         [SerializeField] private float _safeDistance = 0.01f;
+        
+        /// <summary>
+        /// Minimal distance to detect ground.
+        /// </summary>
+        [SerializeField] private float _groundDistance = 0.01f;
 
         /// <summary>
         /// The velocity's role may slightly vary depending on the object's
@@ -172,30 +177,21 @@ namespace TreasureHunters.PlatformerMechanics
             var verticalSpeed = Vector2.Dot(_normalizedGravity, _velocity);
 
             // If verticalSpeed is not zero, it means the object is either moving
-            // upwards or downwards, and thus is in the Airborne state.
-            if (Mathf.Approximately(verticalSpeed, 0))
+            // upwards or downwards, and thus is in the Airborne state. Then search
+            // for a hit with the surface.
+            if (Mathf.Approximately(verticalSpeed, 0) && TryGetHit(Physics2D.gravity,
+                    _groundDistance + _safeDistance, out var hit))
             {
-                // Even if the object currently lacks vertical speed, you must still
-                // ensure it has a surface to stand on. For this, we cast a ray.
-                // The cast distance is calculated as the distance the object can
-                // travel in one update cycle under the influence of gravity,
-                // plus the _safeDistance buffer.
-                var groundCastDistance = 
-                    _gravityFactor 
-                    * Time.fixedDeltaTime 
-                    * Physics2D.gravity.magnitude 
-                    + _safeDistance;
-
-                // Search for a hit with the surface. If a hit is found and the
-                // upward vertical component of the surface is sufficient for the
-                // surface to be considered stable, the object is deemed to be in
-                // the Grounded state.
-                if (TryGetHit(Physics2D.gravity, groundCastDistance, out var hit)
-                    && Vector2.Dot(hit.normal, -_normalizedGravity) 
-                        >= _minGroundNormalVertical)
+                // If a hit is found and the upward vertical component of the
+                // surface is sufficient for the surface to be considered stable,
+                // the object is deemed to be in the Grounded state.
+                var hitVertical = Vector2.Dot(hit.normal, -_normalizedGravity);
+                    
+                if (hitVertical >= _minGroundNormalVertical)
                 {
                     // Save the surface normal. It will be useful for correctly
-                    // calculating the object's speed when moving along the surface.
+                    // calculating the object's speed when moving along the
+                    // surface.
                     _groundNormal = hit.normal;
                     KinematicState = KinematicState.Grounded;
                     return;

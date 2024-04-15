@@ -21,13 +21,13 @@ namespace TreasureHunters.Gameplay
         [SerializeField] private float _maxSlop = 45f;
         
         [SerializeField] private Vector2 _velocity;
-        
+
         [field: SerializeField] public CharacterState State { get; private set; }
         
         public Vector2 Velocity
         {
             get => _velocity;
-
+            
             set => _velocity = value.sqrMagnitude > _sqrMaxSpeed
                 ? value.normalized * _maxSpeed
                 : value;
@@ -59,9 +59,11 @@ namespace TreasureHunters.Gameplay
         
         private void FixedUpdate()
         {
-            Velocity = Time.fixedDeltaTime * GravityFactor * Physics2D.gravity
-                       + _velocity;
-            var slideResults = _rigidbody.Slide(_velocity, Time.fixedDeltaTime, 
+            Velocity += Time.fixedDeltaTime * GravityFactor * Physics2D.gravity;
+            
+            var slideResults = _rigidbody.Slide(
+                _velocity,
+                Time.fixedDeltaTime, 
                 _slideMovement);
 
             if (slideResults.slideHit)
@@ -101,8 +103,7 @@ namespace TreasureHunters.Gameplay
         
         private static Vector2 ClipVector(Vector2 vector, Vector2 hitNormal)
         {
-            var clippingValue = Vector2.Dot(vector, hitNormal) * hitNormal;
-            return vector - clippingValue;
+            return vector - Vector2.Dot(vector, hitNormal) * hitNormal;
         }
     }
 }

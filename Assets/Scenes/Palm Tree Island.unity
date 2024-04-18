@@ -31023,6 +31023,7 @@ GameObject:
   - component: {fileID: 1732264615}
   - component: {fileID: 1732264614}
   - component: {fileID: 1732264613}
+  - component: {fileID: 1732264616}
   m_Layer: 0
   m_Name: Captain
   m_TagString: Untagged
@@ -31119,6 +31120,28 @@ Transform:
   - {fileID: 256301485}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1732264616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732264612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46afc29755aa458a92726614ad42a268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidbody: {fileID: 1732264614}
+  <GravityFactor>k__BackingField: 3
+  _solidLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  _maxSpeed: 30
+  _surfaceAnchor: 0.01
+  _maxSlop: 45
+  _velocity: {x: 0, y: 0}
+  <State>k__BackingField: 0
 --- !u!1 &1777238581
 GameObject:
   m_ObjectHideFlags: 0

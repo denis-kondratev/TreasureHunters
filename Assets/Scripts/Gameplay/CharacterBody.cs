@@ -16,14 +16,14 @@ namespace TreasureHunters.Gameplay
         [SerializeField] private float _maxSpeed = 30;
         
         [Min(0)]
-        [SerializeField] private float _surfaceAnchor = 0.01f;
+        [SerializeField] private float _surfaceAnchor = 0.05f;
         
         [Range(0, 90)]
         [SerializeField] private float _maxSlop = 45f;
         
         [SerializeField] private Vector2 _velocity;
 
-        [field: SerializeField] public CharacterState State { get; private set; }
+        [field: SerializeField] private CharacterState _state;
         
         public Vector2 Velocity
         {
@@ -33,6 +33,21 @@ namespace TreasureHunters.Gameplay
                 ? value.normalized * _maxSpeed
                 : value;
         }
+
+        public CharacterState State
+        {
+            get => _state;
+
+            private set
+            {
+                if (_state != value)
+                {
+                    var previousState = _state;
+                    _state = value;
+                    StateChanged?.Invoke(previousState, value);
+                }
+            }
+        }
         
         private float _sqrMaxSpeed;
 
@@ -40,7 +55,7 @@ namespace TreasureHunters.Gameplay
 
         private float _minGroundVertical;
 
-        public event Action Grounded;
+        public event Action<CharacterState, CharacterState> StateChanged;
 
         public void Jump(float jumpSpeed)
         {
@@ -81,11 +96,7 @@ namespace TreasureHunters.Gameplay
 
                 if (surfaceHit.normal.y >= _minGroundVertical)
                 {
-                    if (State != CharacterState.Grounded)
-                    {
-                        State = CharacterState.Grounded;
-                        Grounded?.Invoke();
-                    }
+                    State = CharacterState.Grounded;
                     return;
                 }
             }

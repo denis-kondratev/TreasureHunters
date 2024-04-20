@@ -31266,7 +31266,7 @@ MonoBehaviour:
   _surfaceAnchor: 0.05
   _maxSlop: 45
   _velocity: {x: 0, y: 0}
-  <State>k__BackingField: 0
+  _state: 0
 --- !u!114 &1732264617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31284,6 +31284,8 @@ MonoBehaviour:
   _jumpHeight: 2.5
   _stopJumpFactor: 2.5
   _jumpActionTime: 0.1
+  _rememberGroundTime: 0.1
+  _isJumping: 0
 --- !u!114 &1732264618
 MonoBehaviour:
   m_ObjectHideFlags: 0

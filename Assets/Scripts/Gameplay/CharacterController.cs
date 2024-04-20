@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,11 +19,15 @@ namespace TreasureHunters.Gameplay
         
         [Min(0)]
         [SerializeField] private float _jumpActionTime = 0.1f;
+
+        [Min(0)]
+        [SerializeField] private float _rememberGroundTime = 0.1f;
         
         private float _locomotionVelocity;
         private float _jumpSpeed;
         private bool _isJumping;
         private float _jumpActionEndTime;
+        private float _lostGroundTime;
 
         public void OnMove(InputAction.CallbackContext context)
         {
@@ -34,7 +39,8 @@ namespace TreasureHunters.Gameplay
         {
             if (context.started)
             {
-                if (_characterBody.State == CharacterState.Grounded)
+                if (_characterBody.State == CharacterState.Grounded
+                    || !_isJumping && _lostGroundTime > Time.unscaledTime)
                 {
                     Jump();
                 }
@@ -58,12 +64,12 @@ namespace TreasureHunters.Gameplay
 
         private void OnEnable()
         {
-            _characterBody.Grounded += OnGrounded;
+            _characterBody.StateChanged += OnStateChanged;
         }
 
         private void OnDisable()
         {
-            _characterBody.Grounded -= OnGrounded;
+            _characterBody.StateChanged -= OnStateChanged;
         }
 
         private void Update()
@@ -71,6 +77,18 @@ namespace TreasureHunters.Gameplay
             _characterBody.SetLocomotionVelocity(_locomotionVelocity);
         }
         
+        private void OnStateChanged(CharacterState previousState, CharacterState state)
+        {
+            if (state == CharacterState.Grounded)
+            {
+                OnGrounded();
+            }
+            else if (previousState == CharacterState.Grounded)
+            {
+                _lostGroundTime = Time.unscaledTime + _rememberGroundTime;
+            }
+        }
+
         private void OnGrounded()
         {
             _isJumping = false;
@@ -95,7 +113,6 @@ namespace TreasureHunters.Gameplay
             
             if (_isJumping && velocity.y > 0)
             {
-                _isJumping = false;
                 _characterBody.Velocity = new Vector2(
                     velocity.x, 
                     velocity.y / _stopJumpFactor);

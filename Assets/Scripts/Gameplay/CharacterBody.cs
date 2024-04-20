@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace TreasureHunters.Gameplay
@@ -39,6 +40,8 @@ namespace TreasureHunters.Gameplay
 
         private float _minGroundVertical;
 
+        public event Action Grounded;
+
         public void Jump(float jumpSpeed)
         {
             Velocity = new Vector2(_velocity.x, jumpSpeed);
@@ -75,15 +78,19 @@ namespace TreasureHunters.Gameplay
             {
                 var surfaceHit = slideResults.surfaceHit;
                 Velocity = ClipVector(_velocity, surfaceHit.normal);
-                
-                State = surfaceHit.normal.y >= _minGroundVertical
-                    ? CharacterState.Grounded
-                    : CharacterState.Airborne;
+
+                if (surfaceHit.normal.y >= _minGroundVertical)
+                {
+                    if (State != CharacterState.Grounded)
+                    {
+                        State = CharacterState.Grounded;
+                        Grounded?.Invoke();
+                    }
+                    return;
+                }
             }
-            else
-            {
-                State = CharacterState.Airborne;
-            }
+            
+            State = CharacterState.Airborne;
         }
 
         private Rigidbody2D.SlideMovement CreateSlideMovement()

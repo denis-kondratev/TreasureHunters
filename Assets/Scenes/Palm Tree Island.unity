@@ -31263,7 +31263,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   _maxSpeed: 30
-  _surfaceAnchor: 0.01
+  _surfaceAnchor: 0.05
   _maxSlop: 45
   _velocity: {x: 0, y: 0}
   <State>k__BackingField: 0
@@ -31283,6 +31283,7 @@ MonoBehaviour:
   _speed: 5
   _jumpHeight: 2.5
   _stopJumpFactor: 2.5
+  _jumpActionTime: 0.1
 --- !u!114 &1732264618
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,9 +16,13 @@ namespace TreasureHunters.Gameplay
         [Min(1)]
         [SerializeField] private float _stopJumpFactor = 2.5f;
         
+        [Min(0)]
+        [SerializeField] private float _jumpActionTime = 0.1f;
+        
         private float _locomotionVelocity;
         private float _jumpSpeed;
         private bool _isJumping;
+        private float _jumpActionEndTime;
 
         public void OnMove(InputAction.CallbackContext context)
         {
@@ -30,7 +34,14 @@ namespace TreasureHunters.Gameplay
         {
             if (context.started)
             {
-                Jump();
+                if (_characterBody.State == CharacterState.Grounded)
+                {
+                    Jump();
+                }
+                else
+                {
+                    _jumpActionEndTime = Time.unscaledTime + _jumpActionTime;
+                }
             }
             else if (context.canceled)
             {
@@ -45,27 +56,41 @@ namespace TreasureHunters.Gameplay
                                       * _jumpHeight);
         }
 
+        private void OnEnable()
+        {
+            _characterBody.Grounded += OnGrounded;
+        }
+
+        private void OnDisable()
+        {
+            _characterBody.Grounded -= OnGrounded;
+        }
+
         private void Update()
         {
-            if (_characterBody.State == CharacterState.Grounded)
-            {
-                _isJumping = false;
-            }
-            
             _characterBody.SetLocomotionVelocity(_locomotionVelocity);
+        }
+        
+        private void OnGrounded()
+        {
+            _isJumping = false;
+
+            if (_jumpActionEndTime > Time.unscaledTime) 
+            {
+                _jumpActionEndTime = 0;
+                Jump();
+            }
         }
 
         private void Jump()
         {
-            if (_characterBody.State == CharacterState.Grounded)
-            {
-                _isJumping = true;
-                _characterBody.Jump(_jumpSpeed);
-            }
+            _isJumping = true;
+            _characterBody.Jump(_jumpSpeed);
         }
 
         private void StopJumping()
         {
+            _jumpActionEndTime = 0;
             var velocity = _characterBody.Velocity;
             
             if (_isJumping && velocity.y > 0)

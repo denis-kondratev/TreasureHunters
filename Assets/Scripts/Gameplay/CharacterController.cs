@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,20 +5,32 @@ namespace TreasureHunters.Gameplay
 {
     public class CharacterController : MonoBehaviour
     {
+        [Tooltip("Specify the Character Body of the character.")]
         [SerializeField] private CharacterBody _characterBody;
         
+        [Tooltip("Character's movement speed.")]
         [Min(0)]
         [SerializeField] private float _speed = 5;
         
+        [Tooltip("The height of the character's jump.")]
         [Min(0)]
         [SerializeField] private float _jumpHeight = 2.5f;
         
+        [Tooltip("Determines how many times the jump speed will be limited at the "
+                 + "moment the jump button is released.")]
         [Min(1)]
         [SerializeField] private float _stopJumpFactor = 2.5f;
         
+        [Tooltip("The time during which the character will be able to perform a jump,"
+                 + " if possible. This allows the player to press the jump button"
+                 + " slightly before the character lands on the surface.")]
         [Min(0)]
         [SerializeField] private float _jumpActionTime = 0.1f;
 
+        [Tooltip("The time during which the character is still able to jump after losing"
+                 + " the ground under their feet. This allows players to press the jump"
+                 + " button slightly later after the character has lost the grounded "
+                 + "state.")]
         [Min(0)]
         [SerializeField] private float _rememberGroundTime = 0.1f;
         

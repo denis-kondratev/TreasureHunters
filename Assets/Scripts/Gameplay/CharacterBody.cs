@@ -5,24 +5,34 @@ namespace TreasureHunters.Gameplay
 {
     public class CharacterBody : MonoBehaviour
     {
+        [Tooltip("Specify the character's Rigidbody2D.")]
         [SerializeField] private Rigidbody2D _rigidbody;
         
+        [Tooltip("Determines the degree of influence of gravity on a character.")]
         [Min(0)]
         [field: SerializeField] public float GravityFactor { get; private set; } = 1f;
         
+        [Tooltip("Specify the layers that will be considered a solid surface.")]
         [SerializeField] private LayerMask _solidLayers;
         
+        [Tooltip("Maximum movement speed of the body.")]
         [Min(0)]
         [SerializeField] private float _maxSpeed = 30;
         
+        [Tooltip("Specify the maximum distance from the ground at which a player will"
+                 + " automatically be attracted to it and become grounded.")]
         [Min(0)]
         [SerializeField] private float _surfaceAnchor = 0.05f;
         
+        [Tooltip("The maximum angle of inclination on which a character can stand "
+                 + "firmly while maintaining the grounded state.")]
         [Range(0, 90)]
         [SerializeField] private float _maxSlop = 45f;
         
+        [Tooltip("The current speed of the character.")]
         [SerializeField] private Vector2 _velocity;
 
+        [Tooltip("The current status of the character.")]
         [field: SerializeField] private CharacterState _state;
         
         public Vector2 Velocity

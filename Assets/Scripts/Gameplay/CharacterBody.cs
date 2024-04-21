@@ -15,7 +15,7 @@ namespace TreasureHunters.Gameplay
         [Tooltip("Specify the layers that will be considered a solid surface.")]
         [SerializeField] private LayerMask _solidLayers;
         
-        [Tooltip("Максимальная скорость движения тела.")]
+        [Tooltip("Maximum movement speed of the body.")]
         [Min(0)]
         [SerializeField] private float _maxSpeed = 30;
         

@@ -39,11 +39,20 @@ namespace TreasureHunters.Gameplay
         private bool _isJumping;
         private float _jumpActionEndTime;
         private float _lostGroundTime;
+        private Vector3 _originalScale;
 
         public void OnMove(InputAction.CallbackContext context)
         {
             var value = context.ReadValue<Vector2>();
             _locomotionVelocity = value.x * _speed;
+            
+            // Change character's direction.
+            if (value.x != 0)
+            {
+                var scale = _originalScale;
+                scale.x = value.x > 0 ? _originalScale.x : -_originalScale.x;
+                transform.localScale = scale;
+            }
         }
 
         public void OnJump(InputAction.CallbackContext context)
@@ -71,6 +80,8 @@ namespace TreasureHunters.Gameplay
             _jumpSpeed = Mathf.Sqrt(2 * Physics2D.gravity.magnitude
                                       * _characterBody.GravityFactor
                                       * _jumpHeight);
+            
+            _originalScale = transform.localScale;
         }
 
         private void OnEnable()

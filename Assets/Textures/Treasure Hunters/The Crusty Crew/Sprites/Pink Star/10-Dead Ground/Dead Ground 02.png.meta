@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dead Ground 02_0: 6610420773212145959
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

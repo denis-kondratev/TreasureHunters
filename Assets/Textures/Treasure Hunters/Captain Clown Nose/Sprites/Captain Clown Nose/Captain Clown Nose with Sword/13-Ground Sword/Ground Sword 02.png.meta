@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ground Sword 02_0: 8378701587652097474
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

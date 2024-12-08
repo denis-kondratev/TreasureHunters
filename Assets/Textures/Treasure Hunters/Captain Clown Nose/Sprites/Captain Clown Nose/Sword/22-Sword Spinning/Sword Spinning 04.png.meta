@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sword Spinning 04_0: 8090225751800044648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

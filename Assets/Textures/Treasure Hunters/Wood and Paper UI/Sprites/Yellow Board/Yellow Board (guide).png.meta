@@ -490,7 +490,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Yellow Board (guide)_0: -24227758021228645
+      Yellow Board (guide)_1: -5529595139175167121
+      Yellow Board (guide)_10: 4651370429327198217
+      Yellow Board (guide)_11: 7592236968062256140
+      Yellow Board (guide)_12: 595073382301459006
+      Yellow Board (guide)_13: 1575405839361649878
+      Yellow Board (guide)_14: 8905801658498837733
+      Yellow Board (guide)_15: 4994426480662806442
+      Yellow Board (guide)_2: 6234407339360835244
+      Yellow Board (guide)_3: -8949674401813499100
+      Yellow Board (guide)_4: -2914162394869970630
+      Yellow Board (guide)_5: 2035038523555492265
+      Yellow Board (guide)_6: 1512229604477819923
+      Yellow Board (guide)_7: 912598947912558105
+      Yellow Board (guide)_8: -3618136689159937916
+      Yellow Board (guide)_9: -4795952895430394347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -154,7 +154,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Chest Close 04_0: 1926920680549762937
+      Chest Close 04_1: -762629011431441647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

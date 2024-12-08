@@ -490,7 +490,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Inventory (guide)_0: 1854652195314173346
+      Inventory (guide)_1: -5301679927913893915
+      Inventory (guide)_10: -173729685016403160
+      Inventory (guide)_11: 4781797567242545948
+      Inventory (guide)_12: -1115793586970462986
+      Inventory (guide)_13: 5138472786481085567
+      Inventory (guide)_14: -7119723480675479917
+      Inventory (guide)_15: -7258084998275881383
+      Inventory (guide)_2: -1875319425399721151
+      Inventory (guide)_3: 4418401013289464358
+      Inventory (guide)_4: 698084190358459845
+      Inventory (guide)_5: -8436029404840565535
+      Inventory (guide)_6: -6075948802547225327
+      Inventory (guide)_7: -1099015645553530040
+      Inventory (guide)_8: -197206456920404935
+      Inventory (guide)_9: 254568770377536632
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -490,7 +490,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Yellow Button (guide)_0: 6078494139430405630
+      Yellow Button (guide)_1: 8267119155228739358
+      Yellow Button (guide)_10: -2017035170524552872
+      Yellow Button (guide)_11: 8803268760851905393
+      Yellow Button (guide)_12: -2486711994700017337
+      Yellow Button (guide)_13: 8858957438281899079
+      Yellow Button (guide)_14: -7550314145331359182
+      Yellow Button (guide)_15: 549064068586101597
+      Yellow Button (guide)_2: -4355774289679369348
+      Yellow Button (guide)_3: 7956433520738734170
+      Yellow Button (guide)_4: 2270699402988777371
+      Yellow Button (guide)_5: 4727123429127599528
+      Yellow Button (guide)_6: -5888751077622998607
+      Yellow Button (guide)_7: -2279233200686806392
+      Yellow Button (guide)_8: -5928557884482057753
+      Yellow Button (guide)_9: 7602338073869324992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

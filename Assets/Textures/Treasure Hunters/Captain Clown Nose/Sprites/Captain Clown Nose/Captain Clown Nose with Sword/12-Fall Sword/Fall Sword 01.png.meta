@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fall Sword 01_0: 6807362818150897754
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

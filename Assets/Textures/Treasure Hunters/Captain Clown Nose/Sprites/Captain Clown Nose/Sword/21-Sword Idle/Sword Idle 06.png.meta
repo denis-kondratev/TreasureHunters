@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sword Idle 06_0: -7596603905982949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

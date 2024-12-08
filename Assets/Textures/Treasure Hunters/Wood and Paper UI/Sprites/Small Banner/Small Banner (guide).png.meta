@@ -418,7 +418,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Small Banner (guide)_0: -8611062603421946565
+      Small Banner (guide)_1: 4058556380825899945
+      Small Banner (guide)_10: 550330050165674164
+      Small Banner (guide)_11: 2852554255487281501
+      Small Banner (guide)_12: -3778664088205940736
+      Small Banner (guide)_2: -1717573471208050104
+      Small Banner (guide)_3: -388092572755202934
+      Small Banner (guide)_4: -4673537173684191815
+      Small Banner (guide)_5: -7781635775009790367
+      Small Banner (guide)_6: -6442731586935920149
+      Small Banner (guide)_7: -5894494552664666803
+      Small Banner (guide)_8: -3315014308254591793
+      Small Banner (guide)_9: 8236210112935391782
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

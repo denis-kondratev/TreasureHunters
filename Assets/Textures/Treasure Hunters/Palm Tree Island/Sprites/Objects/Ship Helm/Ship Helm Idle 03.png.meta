@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ship Helm Idle 03_0: 3244303678895041791
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

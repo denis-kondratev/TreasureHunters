@@ -215,6 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 256301485}
   - component: {fileID: 256301486}
+  - component: {fileID: 256301487}
   m_Layer: 0
   m_Name: Appearance
   m_TagString: Untagged
@@ -291,6 +292,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &256301487
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256301484}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 31e1c1b805f164a1ab08d3eeadbdb3ac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &307585414
 GameObject:
   m_ObjectHideFlags: 0
@@ -31149,6 +31172,7 @@ GameObject:
   - component: {fileID: 1732264616}
   - component: {fileID: 1732264617}
   - component: {fileID: 1732264618}
+  - component: {fileID: 1732264619}
   m_Layer: 0
   m_Name: Captain
   m_TagString: Untagged
@@ -31285,7 +31309,6 @@ MonoBehaviour:
   _stopJumpFactor: 2.5
   _jumpActionTime: 0.1
   _rememberGroundTime: 0.1
-  _isJumping: 0
 --- !u!114 &1732264618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31348,6 +31371,20 @@ MonoBehaviour:
   m_DefaultActionMap: Character
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1732264619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732264612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5aa5eedbd3764f41b711adaada9ba7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 256301487}
+  _body: {fileID: 1732264616}
 --- !u!1 &1777238581
 GameObject:
   m_ObjectHideFlags: 0

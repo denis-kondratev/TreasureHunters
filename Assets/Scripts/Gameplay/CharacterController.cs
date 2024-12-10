@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -33,6 +34,8 @@ namespace TreasureHunters.Gameplay
                  + "state.")]
         [Min(0)]
         [SerializeField] private float _rememberGroundTime = 0.1f;
+
+        public event Action Jumped;
         
         private float _locomotionVelocity;
         private float _jumpSpeed;
@@ -126,6 +129,7 @@ namespace TreasureHunters.Gameplay
         {
             _isJumping = true;
             _characterBody.Jump(_jumpSpeed);
+            Jumped?.Invoke();
         }
 
         private void StopJumping()

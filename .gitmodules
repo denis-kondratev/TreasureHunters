@@ -1,0 +1,5 @@
+
+[submodule "com.bitpatch.2d.character-controller"]
+	path = Packages/com.bitpatch.2d.character-controller
+	url = https://github.com/BitPatch/2D-Character-Controller.git
+	branch = develop

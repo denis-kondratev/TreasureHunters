@@ -1,4 +1,3 @@
-using System;
 using Bitpatch.CharacterController;
 using UnityEngine;
 

@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -83,6 +84,8 @@ ScriptedImporter:
     generateAnimationClips: 0
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
@@ -96,6 +99,8 @@ ScriptedImporter:
     generateAnimationClips: 0
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   importFileNodeState: 1
   platformSettingsDirtyTick: 638498535766036290
   textureAssetName: 
@@ -105,6 +110,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +132,7 @@ ScriptedImporter:
     pivot: {x: 1.1999999, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 104
@@ -146,6 +153,7 @@ ScriptedImporter:
     pivot: {x: 1.8571428, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -166,6 +174,7 @@ ScriptedImporter:
     pivot: {x: 3.75, y: -0.4}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 120
@@ -186,6 +195,7 @@ ScriptedImporter:
     pivot: {x: 4.666667, y: -1.6666666}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 117
@@ -206,6 +216,7 @@ ScriptedImporter:
     pivot: {x: 6.5, y: -6}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 120
@@ -226,6 +237,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 98
@@ -246,6 +258,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.4}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 78
@@ -266,6 +279,7 @@ ScriptedImporter:
     pivot: {x: 0.49999997, y: -0.5833333}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 29
@@ -286,6 +300,7 @@ ScriptedImporter:
     pivot: {x: 0.5294118, y: -0.6666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -306,6 +321,7 @@ ScriptedImporter:
     pivot: {x: 0.5294118, y: -0.8181818}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 53
@@ -326,6 +342,7 @@ ScriptedImporter:
     pivot: {x: 2.9999998, y: -18}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 120
@@ -346,6 +363,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 62
@@ -366,6 +384,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 64
@@ -386,6 +405,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.4}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -406,6 +426,7 @@ ScriptedImporter:
     pivot: {x: 0.49999997, y: -1.6666666}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -426,6 +447,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -6}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -442,136 +464,158 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 48}
   spriteSheetImportData: []
+  tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1188728579
+    uuid:
+      value0: 2582640945
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -1712326351
     name: Dust Particles
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Dust Particles_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 20
         y: 0
         width: 5
         height: 2
       spriteId: d1a9fe5444dba428480035156edc7fb0
-    - name: Dust Particles_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 0
         width: 7
         height: 5
       spriteId: 4b5636576008b412abd2ca47159df794
-    - name: Dust Particles_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 11
         y: 2
         width: 4
         height: 5
       spriteId: 71a16ff19051b4df5aba9d5b4b3a898a
-    - name: Dust Particles_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 12
         y: 5
         width: 3
         height: 3
       spriteId: a372dc68dd05e42669acd57838f929c6
-    - name: Dust Particles_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 6
         width: 2
         height: 1
       spriteId: 5c2c2e077ffcc4594987d20a2bd11a09
-    - name: Dust Particles_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 19
         y: 0
         width: 14
         height: 7
       spriteId: 4d8b57163ae244d73b29986927b64e17
-    - name: Dust Particles_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 20
         y: 4
         width: 12
         height: 10
       spriteId: c2ea61e3f04374b50acf58926b70a09b
-    - name: Dust Particles_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 18
         y: 7
         width: 16
         height: 12
       spriteId: a5a8de402e30f4a8b94c4aa78a7449f6
-    - name: Dust Particles_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 17
         y: 8
         width: 17
         height: 12
       spriteId: 6b6145c0944c946a783027d2806ba5df
-    - name: Dust Particles_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 17
         y: 9
         width: 17
         height: 11
       spriteId: fc5e03da7e4474375aa47a2875280328
-    - name: Dust Particles_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 20
         y: 18
         width: 2
         height: 1
       spriteId: 3c0f5d5678e1d4b6bbbc58c4d6a23dbf
-    - name: Dust Particles_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 9
         y: 0
         width: 34
         height: 2
       spriteId: e446963398e5040898cc43b4aa154095
-    - name: Dust Particles_Frame_14
+    - name: Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 0
         width: 48
         height: 5
       spriteId: b7ed573173f58415abc72ec7cd082dd9
-    - name: Dust Particles_Frame_15
+    - name: Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 0
         y: 2
         width: 52
         height: 5
       spriteId: b5451d5fbff7a42ce9094845cff823be
-    - name: Dust Particles_Frame_16
+    - name: Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 5
         width: 50
         height: 3
       spriteId: 49922f60b678f47fb8572d304fb9925b
-    - name: Dust Particles_Frame_17
+    - name: Frame_17
       frameIndex: 17
+      additiveSortOrder: 0
       cellRect:
         x: 2
         y: 6
@@ -579,7 +623,10 @@ ScriptedImporter:
         height: 1
       spriteId: aff4811d0b00640c7a85d5e50b3721cd
     linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
     parentIndex: -1
+  tileSets: []
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -609,3 +656,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 52, y: 20}
+  previousTextureSize: {x: 128, y: 64}
